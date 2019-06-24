@@ -3,6 +3,7 @@
 
 # Compiled Object files
 *.slo
+CMakeLists.txt.user
 *.lo
 *.o
 *.obj
@@ -30,3 +31,6 @@
 *.exe
 *.out
 *.app
+/bin
+/lib
+.DS*
