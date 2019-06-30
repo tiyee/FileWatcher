@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libLoop.a  CMakeFiles/Loop.dir/src/mac_loop.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libLoop.a

@@ -1,0 +1,4 @@
+/Users/jiangtao/code/github.com/FileWatcher/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jiangtao/code/github.com/FileWatcher/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jiangtao/code/github.com/FileWatcher/cmake-build-debug/CMakeFiles/Loop.dir
+/Users/jiangtao/code/github.com/FileWatcher/cmake-build-debug/CMakeFiles/FileWatcher.dir

@@ -27,8 +27,22 @@ endif (CMAKE_HOST_APPLE)
 MESSAGE("++++++++++++++Start Build+++++++++++++++++")
 
 
-aux_source_directory(src DIR_SRCS)
+aux_source_directory(./src DIR_SRCS)
+add_executable(${PROJECT_NAME} src/main.cpp )
 
-add_executable(FileWatcher src/main.cpp)
+
+if (CMAKE_HOST_APPLE)
+add_library (Loop src/loop_impl.h src/mac_loop.h src/mac_loop.cpp)
+elseif (CMAKE_HOST_UNIX)
+   add_library (Loop  src/linux_loop.h src/linux_loop.cpp)
+else (CMAKE_HOST_APPLE)
+    message(FATAL_ERROR "Platform not supported")
+endif (CMAKE_HOST_APPLE)
+
+   add_library (Acceptor  src/loop_impl.h  src/mac_acceptor.h src/mac_acceptor.cpp)
+   target_link_libraries(Acceptor Loop )
+target_link_libraries(${PROJECT_NAME} Loop  Acceptor)
+
+
 
 
