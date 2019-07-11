@@ -10,7 +10,7 @@ A tool for monitoring file changes
 # Build and Test(目前只支持unix)
 
 1. `git clone git@github.com:tiyee/FileWatcher.git`
-2. `cd angemon`
+2. `cd FileWatcher`
 3. `mkdir build && cd build`
 4. `cmake ..`
 5. `make`
